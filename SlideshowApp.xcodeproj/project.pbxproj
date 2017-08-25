@@ -13,6 +13,11 @@
 		98A3F9A21F4E67470073FAB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98A3F9A11F4E67470073FAB1 /* Assets.xcassets */; };
 		98A3F9A51F4E67470073FAB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98A3F9A31F4E67470073FAB1 /* LaunchScreen.storyboard */; };
 		98A3F9B01F4E67470073FAB1 /* SlideshowAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A3F9AF1F4E67470073FAB1 /* SlideshowAppUITests.swift */; };
+		98A3F9BB1F4E6C910073FAB1 /* 春.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98A3F9BA1F4E6C910073FAB1 /* 春.jpg */; };
+		98A3F9BD1F4E6C9F0073FAB1 /* 夏.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98A3F9BC1F4E6C9F0073FAB1 /* 夏.jpg */; };
+		98A3F9BF1F4E6CA80073FAB1 /* 秋.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98A3F9BE1F4E6CA70073FAB1 /* 秋.jpg */; };
+		98A3F9C11F4E6CAB0073FAB1 /* 冬.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98A3F9C01F4E6CAB0073FAB1 /* 冬.jpg */; };
+		98A3F9C31F4E74390073FAB1 /* exViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A3F9C21F4E74390073FAB1 /* exViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		98A3F9AB1F4E67470073FAB1 /* SlideshowAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideshowAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98A3F9AF1F4E67470073FAB1 /* SlideshowAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowAppUITests.swift; sourceTree = "<group>"; };
 		98A3F9B11F4E67470073FAB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98A3F9BA1F4E6C910073FAB1 /* 春.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "春.jpg"; sourceTree = "<group>"; };
+		98A3F9BC1F4E6C9F0073FAB1 /* 夏.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "夏.jpg"; sourceTree = "<group>"; };
+		98A3F9BE1F4E6CA70073FAB1 /* 秋.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "秋.jpg"; sourceTree = "<group>"; };
+		98A3F9C01F4E6CAB0073FAB1 /* 冬.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "冬.jpg"; sourceTree = "<group>"; };
+		98A3F9C21F4E74390073FAB1 /* exViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,10 @@
 				98A3F9991F4E67470073FAB1 /* SlideshowApp */,
 				98A3F9AE1F4E67470073FAB1 /* SlideshowAppUITests */,
 				98A3F9981F4E67470073FAB1 /* Products */,
+				98A3F9BA1F4E6C910073FAB1 /* 春.jpg */,
+				98A3F9BC1F4E6C9F0073FAB1 /* 夏.jpg */,
+				98A3F9BE1F4E6CA70073FAB1 /* 秋.jpg */,
+				98A3F9C01F4E6CAB0073FAB1 /* 冬.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +94,7 @@
 				98A3F99A1F4E67470073FAB1 /* AppDelegate.swift */,
 				98A3F99C1F4E67470073FAB1 /* ViewController.swift */,
 				98A3F99E1F4E67470073FAB1 /* Main.storyboard */,
+				98A3F9C21F4E74390073FAB1 /* exViewController.swift */,
 				98A3F9A11F4E67470073FAB1 /* Assets.xcassets */,
 				98A3F9A31F4E67470073FAB1 /* LaunchScreen.storyboard */,
 				98A3F9A61F4E67470073FAB1 /* Info.plist */,
@@ -181,9 +196,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98A3F9C11F4E6CAB0073FAB1 /* 冬.jpg in Resources */,
 				98A3F9A51F4E67470073FAB1 /* LaunchScreen.storyboard in Resources */,
+				98A3F9BB1F4E6C910073FAB1 /* 春.jpg in Resources */,
 				98A3F9A21F4E67470073FAB1 /* Assets.xcassets in Resources */,
+				98A3F9BF1F4E6CA80073FAB1 /* 秋.jpg in Resources */,
 				98A3F9A01F4E67470073FAB1 /* Main.storyboard in Resources */,
+				98A3F9BD1F4E6C9F0073FAB1 /* 夏.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98A3F9C31F4E74390073FAB1 /* exViewController.swift in Sources */,
 				98A3F99D1F4E67470073FAB1 /* ViewController.swift in Sources */,
 				98A3F99B1F4E67470073FAB1 /* AppDelegate.swift in Sources */,
 			);
