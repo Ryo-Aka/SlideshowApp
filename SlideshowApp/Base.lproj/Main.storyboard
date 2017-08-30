@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,35 +19,45 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyA-bu-glG">
-                                <rect key="frame" x="250" y="290" width="95" height="127"/>
+                                <rect key="frame" x="250" y="290" width="40" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="972-1s-1nE"/>
+                                </constraints>
                                 <state key="normal" title="Botton"/>
                                 <connections>
                                     <action selector="start_stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qCz-c6-a0h"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpt-XF-JZP">
-                                <rect key="frame" x="46" y="290" width="63" height="127"/>
+                                <rect key="frame" x="46" y="290" width="40" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="zye-Yq-2No"/>
+                                </constraints>
                                 <state key="normal" title="進む"/>
                                 <connections>
                                     <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mjN-5x-W2t"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0h-Gp-P6x">
-                                <rect key="frame" x="86" y="110" width="203" height="130"/>
+                                <rect key="frame" x="86" y="110" width="148" height="130"/>
                                 <color key="backgroundColor" white="0.69536830360000002" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="Bbo-ne-iZ6"/>
                                 </constraints>
                                 <connections>
+                                    <action selector="screen_botton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B05-V1-agS"/>
                                     <segue destination="uow-M2-ViS" kind="show" id="duc-Kf-KJt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbY-Em-pDu">
-                                <rect key="frame" x="156" y="290" width="63" height="127"/>
+                                <rect key="frame" x="140" y="290" width="40" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="bk8-iL-sO5"/>
+                                </constraints>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JKz-8H-jfl"/>
@@ -57,24 +67,23 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="cyA-bu-glG" secondAttribute="trailing" constant="30" id="0aN-wA-eJJ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="kbY-Em-pDu" secondAttribute="trailing" constant="140" id="0ma-It-YIA"/>
+                            <constraint firstItem="kbY-Em-pDu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2MX-iE-nbd"/>
                             <constraint firstItem="dpt-XF-JZP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="270" id="3Zg-fT-naA"/>
-                            <constraint firstItem="dpt-XF-JZP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="Cef-8N-Kfc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kbY-Em-pDu" secondAttribute="bottom" constant="250" id="Hbf-Y8-8jn"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dpt-XF-JZP" secondAttribute="bottom" constant="250" id="SeE-d2-dPU"/>
                             <constraint firstItem="kbY-Em-pDu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="270" id="VRl-cX-UUR"/>
                             <constraint firstItem="A0h-Gp-P6x" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="YXY-SL-ZUd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dpt-XF-JZP" secondAttribute="trailing" constant="250" id="a76-EK-8Sv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="A0h-Gp-P6x" secondAttribute="trailing" constant="70" id="fxE-Pe-OdG"/>
-                            <constraint firstItem="cyA-bu-glG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="250" id="npG-Vf-o0H"/>
+                            <constraint firstItem="dpt-XF-JZP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="lXb-fm-AYR"/>
                             <constraint firstItem="A0h-Gp-P6x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="pLn-jc-1Yu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cyA-bu-glG" secondAttribute="bottom" constant="250" id="qkZ-6m-SB7"/>
-                            <constraint firstItem="kbY-Em-pDu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="140" id="u1M-Ec-rb4"/>
                             <constraint firstItem="cyA-bu-glG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="270" id="xYG-wW-NPW"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="back_botton" destination="kbY-Em-pDu" id="POh-eI-IrW"/>
                         <outlet property="botton_name" destination="cyA-bu-glG" id="tJQ-R7-pGY"/>
+                        <outlet property="next_botton" destination="dpt-XF-JZP" id="8h3-tF-pro"/>
                         <outlet property="screen_image" destination="A0h-Gp-P6x" id="ail-Pc-z0G"/>
                     </connections>
                 </viewController>
@@ -91,14 +100,14 @@
                         <viewControllerLayoutGuide type="bottom" id="bTh-qC-RVH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bqe-jN-E3A">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZZj-G3-lT0">
-                                <rect key="frame" x="15" y="100" width="345" height="327"/>
+                                <rect key="frame" x="15" y="100" width="290" height="228"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgT-jN-dn0">
-                                <rect key="frame" x="15" y="520" width="33" height="117"/>
+                                <rect key="frame" x="15" y="520" width="33" height="18"/>
                                 <color key="backgroundColor" white="0.69536830357142854" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
                                 <state key="normal" title="戻る">
